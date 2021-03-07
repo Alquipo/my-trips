@@ -1,7 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     p,
     a {
       font-size: 2rem;
-      line-height: ${theme.font.medium};
+      line-height: ${theme.sizes.medium};
     }
 
     a {
