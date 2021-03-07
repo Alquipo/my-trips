@@ -1,11 +1,7 @@
-import Main from 'components/Main'
-import SEO from 'components/SEO'
+import dynamic from 'next/dynamic'
+
+const Map = dynamic(() => import('components/Map'), { ssr: false })
 
 export default function Home() {
-  return (
-    <>
-      <SEO title="Boilerplat Nexjs" image="nextjs-logo.svg" />
-      <Main />
-    </>
-  )
+  return <Map />
 }
