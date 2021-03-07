@@ -3,6 +3,9 @@ import { ThemeProvider } from 'styled-components'
 import Head from 'next/head'
 import NextNprogress from 'nextjs-progressbar'
 
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
+
 import theme from 'styles/theme'
 import GlobalStyles from 'styles/global'
 
@@ -10,17 +13,11 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>My Trips</title>
-        <link rel="shortcut icon" href="img/nextjs-logo.svg" />
-        <link rel="apple-touch-icon" href="img/nextjs-logo.svg" />
+        <link rel="shortcut icon" href="img/icon-512.png" />
+        <link rel="apple-touch-icon" href="img/icon-512.png" />
 
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#f2f3f5" />
-        <meta
-          name="description"
-          content="A simple project to show my favorite spots in the world"
-        />
-
         <link
           rel="stylesheet"
           href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -28,6 +25,7 @@ function App({ Component, pageProps }: AppProps) {
           crossOrigin=""
         />
       </Head>
+      <DefaultSeo {...SEO} />
       <NextNprogress
         color="#f231a5"
         startPosition={0.3}
