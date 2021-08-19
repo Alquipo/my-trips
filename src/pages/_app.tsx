@@ -9,6 +9,8 @@ import SEO from '../../next-seo.config'
 import theme from 'styles/theme'
 import GlobalStyles from 'styles/global'
 
+import { StickyNote } from 'components/StickyNote'
+
 function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
@@ -35,6 +37,13 @@ function App({ Component, pageProps }: AppProps) {
 
       <GlobalStyles />
       <Component {...pageProps} />
+
+      <StickyNote>
+        <p>
+          Esse é um site de estudos! Quer saber mais acesse o{' '}
+          <a href="https://github.com/Alquipo/my-trips">Github</a>
+        </p>
+      </StickyNote>
     </ThemeProvider>
   )
 }

@@ -8,7 +8,7 @@ import { MapProps } from 'components/Map'
 
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
-export default function HomwTemplate({ places }: MapProps) {
+export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
       <NextSeo
