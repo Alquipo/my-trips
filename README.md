@@ -16,10 +16,15 @@ My Trips
       <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alquipo/my-trips?color=blue">
   </a>
 
+
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
 
-<img alt="CI Workflow" src="https://github.com/Alquipo/my-trips/workflows/ci/badge.svg?color=blue">
+
+  <a href="https://github.com/Alquipo/my-trips/actions/workflows/ci.yml">
+    <img alt="CI Workflow" src="https://github.com/Alquipo/my-trips/actions/workflows/ci.yml/badge.svg">
+  </a>
 </p>
+
 
 <p align="center">
 
@@ -33,35 +38,18 @@ My Trips
 </p>
 
 <h2 align="center">
-  Bem Vindo a o Boilerplate em NextJS
+  Bem Vindo ao App My Trips
 </h2>
 
 ## 🚀 Sobre o Projeto
 
-Este e um boilerplate em [Next.js](https://nextjs.org/) usado em meus projetos FrontEnd.
+My Trips e uma aplicação para incentivar quem viaja muito a registrar fotos e informações das viagens, tudo usando React e GraphCMS para adicionar os dados.
 
 ## 🎨 Layout
 
-<!-- Design feito por -->
-
-<table>
-  <tr>
-    <td colspan="1"><h4 align="center">Geração de Componentes</h4> </td>
-    <td colspan="1"><h4 align="center">Storybook</h4></td>
-    <td colspan="1"><h4 align="center">Main Component</h4></td>
-  </tr>
-  <tr>
-    <td><img src=".github/readme/generate-components.png" width=300 /></td>
-    <td>
-      <a target="_blank" href="https://raw.githubusercontent.com/Alquipo/boilerplate-nextjs/master/.github/readme/storybook-main.png">
-        <img src=".github/readme/storybook-main.png" width=300 />
-      </a>
-    </td>
-    <td><img src=".github/readme/component-main.png" width=300 /></td>
-    <!-- <td><img src=".github/readme/component-main.png" width=180 /></td>
-    <td><img src=".github/readme/component-main.png" width=180 /></td> -->
-  </tr>
-</table>
+<h4 align="center">
+  <img alt="ExampleWeb" title="ExampleWeb" src=".github/readme/Map.png" width="700px" />
+</h4>
 
 ## 🔨 Tecnologias:
 
@@ -70,11 +58,14 @@ Este e um boilerplate em [Next.js](https://nextjs.org/) usado em meus projetos F
 - **[Styled Components](https://styled-components.com/)**
 - **[Jest](https://jestjs.io/)**
 - **[React Testing Library](https://testing-library.com/docs/react-testing-library/intro)**
-- **[Storybook](https://storybook.js.org/)**
 - **[Eslint](https://eslint.org/)**
 - **[Prettier](https://prettier.io/)**
 - **[Husky](https://github.com/typicode/husky)**
 - **[PlopJS](https://plopjs.com/)**
+- **[GraphQL](https://graphql.org/)**
+- **[GraphCMS](https://graphcms.com/)**
+- **[Leaflet](https://leafletjs.com/)**
+- **[MapBox](https://www.mapbox.com/)**
 
 ## 🔎 Comandos
 
@@ -84,9 +75,7 @@ Este e um boilerplate em [Next.js](https://nextjs.org/) usado em meus projetos F
 - `lint`: Executa o **Linter** em todos os componentes e páginas
 - `test`: Executa **Jest** para testar todos os componentes e páginas
 - `test:watch`: Executa **Jest** em watch mode
-- `storybook`: Executa **Storybook** em `localhost:6006`
-- `build-storybook`: Cria uma build do storybook
-- `generate`: Cria automaticamente um componente
+- `codegen`: Cria as tipagens das query do GraphQL
 
 ## 🚀 Como rodar este projeto
 
@@ -96,10 +85,10 @@ Para clonar e executar este aplicativo, você precisará de [Git](https://git-sc
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/Alquipo/boilerplate-nextjs
+$ git clone https://github.com/Alquipo/my-trips
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd boilerplate-nextjs
+$ cd my-trips
 ```
 
 ### 🎲 Rodando a Aplicação
@@ -114,12 +103,22 @@ $ yarn dev
 # O servidor inciará na porta:3000 - acesse http://localhost:3000
 
 ```
-
-### 💾 Comandos Úteis
+### 📁 Configuração .ENV
 
 ```bash
-#Criação de um componente completo com (index.tsx / stories.tsx / styles.ts / test.tsx)
-$ yarn generate ComponentName
+#adicionado .env.example no projeto, lembrar de adicionar as variáveis de ambiente conforme o exemplo
+
+#GRAPHCMS
+GRAPHQL_HOST=
+GRAPHQL_TOKEN=
+
+#MAPBOX
+NEXT_PUBLIC_MAPBOX_API_KEY=
+NEXT_PUBLIC_MAPBOX_USERID=
+NEXT_PUBLIC_MAPBOX_STYLEID=
+
+#Google Analytics
+NEXT_PUBLIC_GA_TRACKING=
 
 ```
 
