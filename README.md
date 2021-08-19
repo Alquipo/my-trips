@@ -1,26 +1,24 @@
-<img alt="NextJS" title="NextJS" src=".github/readme/NextJs.png" />
-
 <h1 align="center">
-🚧 Boilerplat NextJs  | Em Construção 🚧
+My Trips
 </h1>
 
 <p align="center">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Alquipo/boilerplate-nextjs">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Alquipo/my-trips">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Alquipo/boilerplate-nextjs">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Alquipo/my-trips">
 
   <a href="https://www.linkedin.com/in/alquiponeto/">
       <img alt="Made by Alquipo" src="https://img.shields.io/badge/made%20by-AlquipoNeto-blue">
   </a>
 
-  <a href="https://github.com/Alquipo/boilerplate-nextjs/commits/master">
-      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alquipo/boilerplate-nextjs?color=blue">
+  <a href="https://github.com/Alquipo/my-trips/commits/master">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Alquipo/my-trips?color=blue">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
 
-<img alt="CI Workflow" src="https://github.com/Alquipo/boilerplate-nextjs/workflows/ci/badge.svg?color=blue">
+<img alt="CI Workflow" src="https://github.com/Alquipo/my-trips/workflows/ci/badge.svg?color=blue">
 </p>
 
 <p align="center">
